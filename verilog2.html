@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Varun's Verilog</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/verilog.css">
+    </head>
+    <body>
+        
+        <div id="container--main">
+
+            <a href="verilog.html">&#x2190; Go Back</a>
+            <h1>VERILOG (Operators)</h1>
+            
+            <section id="work-history-wrapper" class="section--page">
+                <h2>Arthimetic Operators &lt;/&gt;:</h2>
+            
+                <div class="line-break"></div>
+                <div class="card--work-history">
+                    <ul>
+                        <li><strong>*</strong> = Multiply.</li>
+                        <li><strong>/</strong> = Divide.</li>
+                        <li><strong>+</strong> = Add.</li>
+                        <li><strong>-</strong> = Subtract.</li>
+                        <li><strong>%</strong> = Modulus.</li>
+                    </ul>
+                    <P><strong>Ex1:</strong> (5+10 = 15), (10%3 = 1),(5-10 = -5), (10/(-5) = -2)</P>
+                </div>
+                </section>
+
+            
+                <section id="work-history-wrapper" class="section--page">
+                    <h2>Logical Operators &lt;/&gt;:</h2>
+                
+                    <div class="line-break"></div>
+                    <div class="card--work-history">
+                        <ul>
+                            <li> <strong>&&</strong> &#x2192; Logical AND</li>
+                            <li> <strong>|| </strong> &#x2192; Logical OR</li>
+                            <li> <strong>!  </strong>  &#x2192; Logical NOT</li>
+            
+                        </ul>
+                        <p> Operands evaluate one bit value: 0,1 and x.</p>
+                        <p>Result is one bit value.</p>
+                        <ul>
+                            <li> A=1;  A&&B &#x2192; 1&&0 &#x2192; 0</li>
+                            <li> B=0;  A||B &#x2192; 1||0 &#x2192; 1</li>
+                            <li> C=x;  C||B &#x2192; x||0 &#x2192; x</li>
+                        </ul>
+                    </div>
+                    </section>
+            <section id="work-history-wrapper" class="section--page">
+                <h2>Relational Operators &lt;/&gt;:</h2>
+            
+                <div class="line-break"></div>
+                <div class="card--work-history">
+                    <ul>
+                        <li>a <strong>&lt;</strong> b  (a less than b)</li>
+                        <li>a <strong>&gt;</strong> b  (a greater than b)</li>
+                        <li>a <strong>&lt;=</strong> b  (a less than or equal to b)</li>
+                        <li>a <strong>>=</strong> b  (a greater than or equal to b)</li>
+                    </ul>
+                </div>
+                <ul>
+                    <li> 1 is true </li>
+                    <li> 0 is false </li>
+                    <li> The result is a scalar</li>
+                    <li> x if any operands are unknown.</li>
+                </ul>
+                </section>
+            <section id="work-history-wrapper" class="section--page">
+                <h2>Equality Operators &lt;/&gt;:</h2>
+            
+                <div class="line-break"></div>
+                <div class="card--work-history">
+                    <ul>
+                        <li>a <strong>===</strong> b &#x2192; <strong>a</strong> is equal to <strong>b</strong>, including x and z (Case euality).</li>
+                        <li>a <strong>!==</strong> b &#x2192; <strong>a</strong> is not equal to <strong>b</strong>, including x and z (Case inequality).</li>
+                        <li>a <strong>==</strong> b &#x2192; <strong>a</strong> equal to <strong>b</strong>, result may be unknown (Logical equality).</li>
+                        <li>a <strong>!=</strong> b = &#x2192; <strong>a</strong> not equal to <strong>b</strong>, result may be unknown (Logically equality).</li>
+                    </ul>
+                    <P>-> Operands are compared bit by bit with zero filling if the operands do not have same length.</P>
+                    <p>-> Result is 0(false) or 1(true).</p>
+                    <p><strong>Ex:</strong> </p>
+                    <p> 4'bx001 === 4'bx001 = 1;</p>
+                    <p> 4'bx0x1 === 4'bx001 = 0;</p>
+                    <p> 4'bz0x1 === 4'bz0x1 = 1;</p>
+                    <p> 4'bx0x1 === 4'bx001 = 1;</p>
+                    <p> 5 == 10 = 0;</p>
+                    <p> 5 == 5 = 1;</p>
+                </div>
+            </section>
+
+            <section id="work-history-wrapper" class="section--page">
+                <h2>Shift & Conditional Operators &lt;/&gt;:</h2>
+            
+                <div class="line-break"></div>
+                <div class="card--work-history">
+                    <ul>
+                        <li><strong>>></strong> &#x2192; Shift Right.</li>
+                        <li><strong>&lt;&lt;</strong> &#x2192; Shift Left.</li>
+                        <p>a = 4,b1010; d = a>>2; // d = 0010 = a&lt;&lt;1 // c = 0100</p>
+                        <li><strong>-</strong> = Subtract.</li>
+                        <li><strong>%</strong> = Modulus.</li>
+                    </ul>
+                    <P><strong>Ex1:</strong> (5+10 = 15), (10%3 = 1),(5-10 = -5), (10/(-5) = -2)</P>
+                </div>
+            </section>
+
+            <a href="verilog.html">&#x2190; Home </a>
+            <a href="verilog3.html"> Next page&#x2192;</a>
+    </body>
+</html>
