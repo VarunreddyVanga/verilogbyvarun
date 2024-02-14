@@ -35,13 +35,13 @@ body{
 
 p, span, li{
     color: var(--secondaryTextColor);
-    font-size: 1.05em;
+    font-size: 1.1em;
 }
 
 a{
     text-decoration: none;
     color: var(--mainLinkColor);
-    font-weight: 1000;
+    font-weight: 400;
 }
 
 li{

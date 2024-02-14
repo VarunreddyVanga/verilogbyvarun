@@ -14,3 +14,81 @@
 
             <a href="index.html">&#x2190; Go Back</a>
             <h1>VERILOG <div class="line-start"></div></h1>
+            <h2>Data types</h2>
+                <h2><strong>Net types</strong></h2>
+                <ul id="qualifications--list">
+                    <li>✔️ Physical connection between structural element.</li>
+                    <li>✔️ Carries the value of the Signal it is connected to and transmit to the circuit block connected to it.</li>
+                    <li>✔️ If driving end of a net is floating, then net goes z.</li>
+                    <li><strong>Ex:</strong> wire</li>
+                </ul>
+                <h2><strong>Net types</strong></h2>
+                <ul id="qualifications--list">
+                    <li>✔️ Represent an abstract storage element.</li>
+                    <li>✔️ A net or wire connected to reg takes on the value stored in the reg and can be used as input to other circuit element.</li>
+                    <li><strong>Ex:</strong> reg</li>
+                    <li>Default Values</li>
+                    <ul><li>net list : z</li>
+                        <li>register : x</li>
+                    </ul>
+                </ul>
+                
+                <section class="section--page">
+                    <h2>Scalar & Vectors</h2>
+                
+                    <div class="card--license">
+                        <ul>
+                            <li>Entities represent single bit (wheter the bit is stored, changed or transferred) called scalar.</li>
+                            <p><strong>Ex:</strong> wire w1; //A 1- bit wire</p>
+                        </ul>
+                    </div>
+                    <div class="card--license">
+                        <ul>
+                            <li>Multiple lines carry signals in cluster are called scalar.</li>
+                            <p><strong>Ex1:</strong> wire [msb:lsb] wire1, wire2,....;</p>
+                            <p><strong>Ex2:</strong> reg [msb:lsb] reg1, reg2,.....;</p>
+                            <p><strong>Ex3:</strong> wire [6:0] Clear; // A 7-Bit wire;</p>
+                        </ul>
+                    </div>
+                    <div class="card--license">
+                        <ul>
+                            <li>reg [0:3] mem [0:63];</li>
+                            <p><strong>--</strong>An array of 64 4-Bit registers.</p>
+                            <li>reg mem [0:4];</li>
+                            <p><strong>--</strong>An array of 64 1-Bit registers.</p>
+                        </ul>
+                    </div>
+                
+                </section>
+                <div>
+                    <h2>Ports</h2>
+                    <ul>
+                        <li>Ports provide the interface by which a module can communicate</li>
+                        <li>Port Declaration:
+                            <ul id="qualifications--list">
+                                <li>▶️<strong>input</strong>: input port</li>
+                                <li>▶️<strong>output</strong>: output port</li>
+                                <li>▶️<strong>inout</strong>: bidirectional port</li>
+                            </ul>
+                        <h2>Input Declaration</h2>
+                        <ul>
+                            <h2>Scalar</h2>
+                            <ul><li>input is the list of input identifiers</li>
+                            <li>Ex:<strong> input A,B;</strong></li></ul>
+                            <h2>Vector</h2>
+                            <ul><li>input [range]</li>
+                            <li>Ex: <strong>input[15:0] A,B;</strong></li></ul>
+                        </ul>
+                        <h2>Output Declaration</h2>
+                        <ul>
+                            <li>Scalar Example: <strong>output c_out;</strong></li>
+                            <li>Vector Example: <strong>output[7:0] ACC, REG_IN;</strong></li>
+                        </ul>
+                    </ul>
+                </div>
+                <a href="verilog3.html">&#x2190; Home </a>
+                <a href="verilog5.html"> Next page&#x2192;</a>
+                <p><strong>NOTE: This web page is designed to provide way to learn complete Verilog System Design, in case of any error in data kindly contact through mail:   Srivarunreddyv@gmail.com</strong></p>
+                </div>
+            </body>
+        </html>
