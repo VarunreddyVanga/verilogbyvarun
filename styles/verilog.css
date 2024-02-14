@@ -8,7 +8,7 @@
     --mainBgColor-light:rgb(249, 250,251);
 
     --mainTextColor-dark:#fff;
-    --secondaryTextColor-dark:#adb0b1;
+    --secondaryTextColor-dark:#ced7d7;
     --mainLinkColor-dark:rgb(30, 190,214);
     --mainBorderColor-dark:#2b3031;
     --mainBgColor-dark:#131415;
@@ -35,17 +35,17 @@ body{
 
 p, span, li{
     color: var(--secondaryTextColor);
-    font-size: 1.1em;
+    font-size: 1.05em;
 }
 
 a{
     text-decoration: none;
     color: var(--mainLinkColor);
-    font-weight: 500;
+    font-weight: 1000;
 }
 
 li{
-    line-height: 1.9em;
+    line-height: 2.1em;
 }
 
 #container--main{
@@ -118,8 +118,8 @@ li{
 
 .card--work-history{
     border-left: 1px solid var(--mainBorderColor);
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     padding-left: 2em;
 }
 
