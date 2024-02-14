@@ -128,6 +128,11 @@ li{
     height: 1px;
 }
 
+.line-start {
+    background-color: var(--mainTextColor);
+    height: 1.2px;
+}
+
 #wrapper--techstack__items{
     display: flex;
     flex-wrap: wrap;
