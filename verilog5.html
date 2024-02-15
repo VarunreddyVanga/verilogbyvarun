@@ -14,3 +14,80 @@
 
             <a href="index.html">&#x2190; Go Back</a>
             <h1>VERILOG <div class="line-start"></div></h1>
+            <section id="wrapper--hero" class="section--page">
+
+                <div>
+                    <h1><strong> Event Control:</strong></h1>
+                    <ul id="qualifications--list">
+                        <li>Edge triggered event control</li>
+                        <li>Level triggered event control</li>
+                        <h2>🔻Edge Triggered</h2>
+                        <ul><li>@(posedge clk) //Positive edge of clk</li>
+                        <li>Curr_state = Next_State.</li></ul>
+                        <h2>🔻Level Triggered event control</h2>
+                        <ul><li>@(A or B) //Changes in values A or B</li>
+                        <li>Out = A&B;</li></ul>
+                    </ul>
+                </div>
+            </section>
+            <section id="wrapper--hero" class="section--page"></section>
+            <h1>Assignments</h1>
+            <div>
+                <h2>Continous Assignment:</h2>
+                <ul>
+                    <li>Assign value to nets(vector or scalar)</li>
+                    <li>They are triggered whenever the simulation causes the value of the right value of the right hand side to change</li>
+                    <li>Keyword: "<strong>assign</strong>"</li>
+                    <p><strong>Eg:</strong> assign out = in1 & in2;</p>
+                </ul>
+            </div>
+            <div>
+                <section id="wrapper--ero" class="section--page">
+                <h2>Procedural Assignment:</h2>
+                <ul id="qualifications--list">
+                    <li>❕<strong>Blocking</strong></li>
+                    <li>❕<strong>Non-Blocking</strong></li>
+                </ul>
+              
+                <ul>
+                    <li>Drive values onto register(Vectors and Scalar)</li>
+                    <li>They occur within procedures such as <strong>always</strong> and <strong>initial</strong></li>
+                    <li>They are triggered when flow of execution reaches them (like in C)</li>
+                    <li>All statements inside an intial statement constitue an initial block</li>
+                    <li>An initial Block starts at time 0, executes exactly once during a simulation, and then does not exactly one
+                        one during a simulation, and then does not execute again.
+                    </li>
+                    <li>If there are multiple initial blocks starts to execute concurrently at time 0. Each block finishes execution
+                         independently of other blocks.
+                    </li>
+                    <li>All the behavioural statement inside an always statement constitute an always block.</li>
+                    <li>The always statement starts at time 0 and execute the statement in the always block 
+                        continously in a looping fashion if the sensitivity list is satisfied.
+                    </li>
+                </ul>
+                </section></div>
+                    
+                    <section class="section--page">
+                        <div id="wrapper--techstack__items">
+                            <p><strong>Ex:</strong></p>
+                            <div class="card--techstack"><span>
+                                <ul id="qualifications--list">
+                                    <li>intial begin;</li>
+                                    <li>sum = 0;</li>
+                                    <li>carry = 0;</li>
+                                    <li>end</li>
+                                </ul>
+                                <div class="line-break"></div>
+                                <ul id="qualifications--list">
+                                    <li>always @(A or B)</li>
+                                    <li>begin;</li>
+                                    <li>Sum = A ^ B;</li>
+                                    <li>Carry = A & B;</li>
+                                    <li>end</li>
+                                </ul></span>
+                            </div>
+                    </div>
+                </section>
+            </div>
+    </body>
+</html>
