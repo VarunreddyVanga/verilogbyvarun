@@ -12,7 +12,7 @@
         
         <div id="container--main">
 
-            <a href="index.html">&#x2190; Go Back</a>
+            <a href="index.html">&#x2190; Home</a>
             <h1>VERILOG <div class="line-start"></div></h1>
             <section id="wrapper--hero" class="section--page">
 
@@ -88,6 +88,109 @@
                             </div>
                     </div>
                 </section>
+                <section id="wrapper--ero" class="section--page">
+                    <h2>Procedural Assignment:</h2>
+                    <ul>
+                        <li>Blocking are executed in order they are listed"</li>
+                        <li>The assignment operator "<strong>=</strong>" is used</li>
+                    </ul>
+                    <ul id="qualifications">
+                        <li><strong>Ex:</strong></li>
+                        <ul id="qualifications--list">
+                            <li><strong>reg a, b, c, reg1, reg2;</strong></li>
+                            <li><strong>initial begin</strong></li>
+                            <li><strong>a = 1;</strong></li>
+                            <li><strong>b = 0;</strong></li>
+                            <li><strong>c = 1;</strong></li>
+                            <li><strong>#10 reg1 = 1'b0;</strong></li>
+                            <li><strong>#5 c = reg1;</strong></li>
+                            <li><strong>#5 reg2 = b;</strong></li>
+                            <li><strong>end</strong></li>
+                        </ul>
+                    </ul>
+                    </section>
+                </section>
+                <section id="wrapper--ero" class="section--page">
+                    <h2>Non - blocking Assignment</h2>
+                    <ul>
+                        <li>Contains '<strong>&lt;=</strong> assignment operator.</li>
+                        <li>The non blocking does not block the execution of other statements.</li>
+                    </ul>
+                    <ul id="qualifications">
+                        <li><strong>Ex:</strong></li>
+                        <ul id="qualifications--list">
+                            <li><strong>always @(posedge clk)</strong></li>
+                            <li><strong>begin</strong></li>
+                            <li><strong>B &lt;= A;</strong></li>
+                            <li><strong>C &lt;= B;</strong></li>
+                            <li><strong>D &lt;= C;</strong></li>
+                            <li><strong>end</strong></li>
+                        </ul>
+                    </ul></section>
+                    <section id="wrapper--ero" class="section--page">
+                        <h2>Types of Verilog Modelling:</h2>
+                        <ul>
+                            <li><strong>Behavioural:</strong></li>
+                            <ul>
+                                <li>Procedural code, Similar to C</li>
+                                <li>Little Structural Detail</li>
+                            </ul>
+                            <li><strong>Data Flow:</strong></li>
+                            <ul>
+                                <li>Specifies transfer to data between register.</li>
+                                <li>Some structural information available(RTL)</li>
+                            </ul>
+                        <li><strong>Structural(Gate, Switch):</strong></li>
+                        <ul>
+                            <li>Interconnection of simple connection.</li>
+                            <li>Purely Structural</li>
+                            <li>More Optimized</li>
+                        </ul>
+                        </ul>
+                        </section>
+                    <section class="section--page">
+                        <div id="wrapper--techstack__items">
+                            <h2>Behavioral Modelling(Half Adder):</h2>
+                            <div class="card--techstack"><strong><span>
+                                <ul id="qualifications--list">
+                                    <li>module adder_b(in1, in2, sum, carry);</li>
+                                    <li>input in1, in2;</li>
+                                    <li>output sum,carry;</li>
+                                    <li>assign{carry,sum} = in1 + in2;</li>
+                                    <li>endmodule</li>
+                                </strong>
+                                </ul></span></div></div>
+                    </section>
+                    <section class="section--page">
+                        <div id="wrapper--techstack__items">
+                            <h2>Data flow Design(Half Adder):</h2>
+                            <div class="card--techstack"><span>
+                                <ul id="qualifications--list"><strong>
+                                    <li>module adder_b(in1, in2, sum, carry);</li>
+                                    <li>input in1, in2;</li>
+                                    <li>output sum,carry;</li>
+                                    <li>assign sum = in1 ^ in2;</li>
+                                    <li>assign carry = in1 & in2;</li>
+                                    <li>endmodule</li></strong>
+                                </ul></span></div></div>
+                    </section>
+                    <section class="section--page">
+                        <div id="wrapper--techstack__items">
+                            <h2>Strctural Design(Half Adder):</h2>
+                            <div class="card--techstack"><span>
+                                <ul id="qualifications--list"><strong>
+                                    <li>module adder_b(in1, in2, sum, carry);</li>
+                                    <li>input in1, in2;</li>
+                                    <li>output sum,carry;</li>
+                                    <li>and G0(carry, in1, in2);</li>
+                                    <li>and G1(sum, in1, in2);</li>
+                                    <li>endmodule</li></strong>
+                                </ul></span></div></div>
+                    </section>
+                    <a href="verilog4.html">&#x2190; Home </a>
+                    <a href="verilog6.html"> Next page&#x2192;</a>
+                    <div class="line-break"></div>
+                    <p><strong>NOTE: This web page is designed to provide way to learn complete Verilog System Design, in case of any error in data kindly contact through mail:   Srivarunreddyv@gmail.com</strong></p>
             </div>
     </body>
 </html>
